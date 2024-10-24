@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="E-commerce Admin Test Suite">
+
+<listeners>
+    <listener class-name="com.scart.utilities.MyListener"/>
+  </listeners>
+  
+  <test  name="Test">
+   <parameter name="os" value="Windows"></parameter>
+  <parameter name="browser" value="Chrome"></parameter>
+    <parameter name="emailText" value="admin@gmail.com"></parameter>
+    
+    <classes>
+      <class name="com.scart.testbase.BaseClass"/>
+      <class name="com.scart.testcases.TC01_LoginAndLogOutTest"/>
+            <class name="com.scart.testcases.TC02_ThemeTest"/>
+
+            <class name="com.scart.testcases.TC03_VerifyLinksInMenuSectionTest"/>
+
+      <class name="com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
