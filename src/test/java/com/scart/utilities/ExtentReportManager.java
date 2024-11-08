@@ -139,11 +139,28 @@ public class ExtentReportManager {
 
 	public static String getJs() 
 	{
-		String videoFilePath = getLatestMp4File();  
-		String pngFilePath=getLatestPngFile();
-		String audioFilePath=getLatestAudioFile();
-		String excelFilePath=getLatestExcelFile();
+//		String videoFilePath = getLatestMp4File();  
+//		String pngFilePath=getLatestPngFile();
+//		String audioFilePath=getLatestAudioFile();
+//		String excelFilePath=getLatestExcelFile();
+		
+		
+		
+		
+		String videoUrl = S3Uploader.uploadFileToS3(getLatestMp4File(), "video");
+	    String pngUrl = S3Uploader.uploadFileToS3(getLatestPngFile(), "image");
+	    String audioUrl = S3Uploader.uploadFileToS3(getLatestAudioFile(), "audio");
+	    String excelUrl = S3Uploader.uploadFileToS3(getLatestExcelFile(), "excel");
+		
 	
+	    FileUrlManager.storeUrl(FileUrlManager.VIDEO_FILE, videoUrl);
+        FileUrlManager.storeUrl(FileUrlManager.IMAGE_FILE, pngUrl);
+        FileUrlManager.storeUrl(FileUrlManager.AUDIO_FILE, audioUrl);
+        FileUrlManager.storeUrl(FileUrlManager.EXCEL_FILE, excelUrl);
+        //FileUrlManager.storeUrl(FileUrlManager.HTML_FILE, htmlUrl);
+	    
+	    
+	    
 		String js=   
 	
 "	var ul = document.querySelector('.nav-right');"+
@@ -196,7 +213,8 @@ public class ExtentReportManager {
 
 "    var videoElement = document.createElement('video');" +
 //"    videoElement.src = '" + videoFilePath + "';" +  
-"    videoElement.src = '" + new File(videoFilePath).toURI().toString() + "';" +
+//"    videoElement.src = '" + new File(videoFilePath).toURI().toString() + "';" +
+"    videoElement.src = '" + videoUrl + "';" +  // Using S3 URL instead of local file
 
 "    videoElement.width = 650;" +
 //"     videoElement.height=700;"+
@@ -219,7 +237,8 @@ public class ExtentReportManager {
 "	newLis.className = 'm-r-10';" +
 "var newLink1 = document.createElement('a');"+
 //"	newLink1.href = '"+pngFilePath+"';"+
-"newLink1.href = '" + new File(pngFilePath).toURI().toString() + "';" +
+//"newLink1.href = '" + new File(pngFilePath).toURI().toString() + "';" +
+"newLink1.href = '" + pngUrl + "';" +  // Using S3 URL for graph
 
 "newLink1.target = '_blank'; "+ 
 "newLink1.title='click here to view Test Execution Results';"+
@@ -252,7 +271,9 @@ public class ExtentReportManager {
 "newLink2.title = 'Click here to listen Test Run Summary';" +
 
 // Create an audio element
-"var audio = new Audio('" + new File(audioFilePath).toURI().toString() + "');" +
+//"var audio = new Audio('" + new File(audioFilePath).toURI().toString() + "');" +
+"var audio = new Audio('" + audioUrl + "');" +  // Using S3 URL for audio
+
 "audio.preload = 'auto';" +  // Preload the audio file
 
 // Create the span for the button
@@ -296,7 +317,8 @@ public class ExtentReportManager {
 "	newList1.className = 'm-r-10';" +
 "var newLink3 = document.createElement('a');"+
 //"	newLink1.href = '"+pngFilePath+"';"+
-"newLink3.href = '" + new File(excelFilePath).toURI().toString() + "';" +
+//"newLink3.href = '" + new File(excelFilePath).toURI().toString() + "';" +
+"newLink3.href = '" + excelUrl + "';" +  // Using S3 URL for excel
 
 "newLink3.target = '_blank'; "+ 
 "newLink3.title='click here to Download Orders List';"+

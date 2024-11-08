@@ -1,44 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [E-commerce Admin Test Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.scart.utilities.MyListener"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="FirefoxTest(failed)">
-    <parameter name="os" value="Windows"/>
-    <parameter name="browser" value="Firefox"/>
-    <parameter name="emailText" value="admin@gmail.com"/>
-    <classes>
-      <class name="com.scart.testcases.TC01_LoginAndLogOutTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="loginAndLogOutTest" invocation-numbers="1 2"/>
-        </methods>
-      </class> <!-- com.scart.testcases.TC01_LoginAndLogOutTest -->
-      <class name="com.scart.testcases.TC02_ThemeTest">
-        <methods>
-          <include name="selectThemeOption"/>
-          <include name="verifyLogin"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.scart.testcases.TC02_ThemeTest -->
-    </classes>
-  </test> <!-- FirefoxTest(failed) -->
-  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
+  <test thread-count="5" name="Test(failed)">
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="Chrome"/>
     <parameter name="emailText" value="admin@gmail.com"/>
     <classes>
-      <class name="com.scart.testcases.TC03_VerifyLinksInMenuSectionTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="verifyLogin"/>
-          <include name="verifySelectAllCheckboxFunctionality"/>
-        </methods>
-      </class> <!-- com.scart.testcases.TC03_VerifyLinksInMenuSectionTest -->
       <class name="com.scart.testcases.TC01_LoginAndLogOutTest">
         <methods>
           <include name="tearDown"/>
@@ -47,19 +17,5 @@
         </methods>
       </class> <!-- com.scart.testcases.TC01_LoginAndLogOutTest -->
     </classes>
-  </test> <!-- ChromeTest(failed) -->
-  <test thread-count="5" parallel="tests" name="EdgeTest(failed)">
-    <parameter name="os" value="Windows"/>
-    <parameter name="browser" value="Edge"/>
-    <parameter name="emailText" value="admin@gmail.com"/>
-    <classes>
-      <class name="com.scart.testcases.TC01_LoginAndLogOutTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="loginAndLogOutTest" invocation-numbers="1 2"/>
-        </methods>
-      </class> <!-- com.scart.testcases.TC01_LoginAndLogOutTest -->
-    </classes>
-  </test> <!-- EdgeTest(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [E-commerce Admin Test Suite] -->

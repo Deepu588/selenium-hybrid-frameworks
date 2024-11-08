@@ -29,7 +29,7 @@ public class MailSender {
         String mailFrom = "annamdeepak1912@gmail.com";  // Sender's email
         String password = "buhpssooxkllznbk";         // Sender's email password
         //buhp ssoo xkll znbk
-        String mailTo = "deepuannam484@gmail.com";  // Recipient's email
+        String mailTo = "sree.garlapatii@gmail.com";  // Recipient's email
         String subject =ReadMailContent.getEmailGHeader();
         String message =ReadMailContent.getEmailBody()+ReadMailContent.getEmailFooter();
 
@@ -81,36 +81,36 @@ public class MailSender {
                 attachFile(multipart, htmlFile);
             }
 
-            // Attach MP4 recording
-            String mp4File = ExtentReportManager.getLatestMp4File();
-            if (mp4File != null) {
-                File videoFile = new File(baseDir, mp4File);
-                attachFile(multipart, videoFile);
-            }
-
-            // Attach PNG graph
-            String pngFile = ExtentReportManager.getLatestPngFile();
-            if (pngFile != null) {
-                File graphFile = new File(baseDir, pngFile);
-                attachFile(multipart, graphFile);
-            }
-            
-            
-            // Attach Excel File
-            String excelFile = ExtentReportManager.getLatestExcelFile();
-            if (excelFile != null) {
-                File ordersFile = new File(baseDir, excelFile);
-                attachFile(multipart, ordersFile);
-            }
-            
-            
-            
-            String audioFile = ExtentReportManager.getLatestAudioFile();
-            if (audioFile != null) {
-                File audioFil = new File(baseDir, audioFile);
-                attachFile(multipart, audioFil);
-            }
-            
+//            // Attach MP4 recording
+//            String mp4File = ExtentReportManager.getLatestMp4File();
+//            if (mp4File != null) {
+//                File videoFile = new File(baseDir, mp4File);
+//                attachFile(multipart, videoFile);
+//            }
+//
+//            // Attach PNG graph
+//            String pngFile = ExtentReportManager.getLatestPngFile();
+//            if (pngFile != null) {
+//                File graphFile = new File(baseDir, pngFile);
+//                attachFile(multipart, graphFile);
+//            }
+//            
+//            
+//            // Attach Excel File
+//            String excelFile = ExtentReportManager.getLatestExcelFile();
+//            if (excelFile != null) {
+//                File ordersFile = new File(baseDir, excelFile);
+//                attachFile(multipart, ordersFile);
+//            }
+//            
+//            
+//            
+//            String audioFile = ExtentReportManager.getLatestAudioFile();
+//            if (audioFile != null) {
+//                File audioFil = new File(baseDir, audioFile);
+//                attachFile(multipart, audioFil);
+//            }
+//            
             
 //
 //          String headerImage = ExtentReportManager.getHeaderImageFile();
@@ -120,17 +120,7 @@ public class MailSender {
 //            }
 
             
-//            String headerImage = ExtentReportManager.getHeaderImageFile();
-//            if (headerImage != null) {
-//                File headerFile = new File(baseDir + File.separator + headerImage);
-//                if (headerFile.exists()) {
-//                    System.out.println("Attaching header image from: " + headerFile.getAbsolutePath());
-//                    attachFile(multipart, headerFile);
-//                } else {
-//                    System.out.println("Header image file not found at: " + headerFile.getAbsolutePath());
-//                }
-//            }
-//            
+
             
             
             // Set the multipart content to the email message

@@ -1,120 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="41" passed="33" failed="8" skipped="0">
+<testng-results ignored="0" total="14" passed="12" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-24T16:19:47 IST" name="Suite" finished-at="2024-10-24T16:22:23 IST" duration-ms="156458">
+  <suite started-at="2024-11-07T21:28:57 IST" name="E-commerce Admin Test Suite" finished-at="2024-11-07T21:31:37 IST" duration-ms="160345">
     <groups>
     </groups>
-    <test started-at="2024-10-24T16:19:47 IST" name="FirefoxTest" finished-at="2024-10-24T16:22:15 IST" duration-ms="148334">
+    <test started-at="2024-11-07T21:28:57 IST" name="Test" finished-at="2024-11-07T21:31:37 IST" duration-ms="160345">
       <class name="com.scart.testcases.TC02_ThemeTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.scart.testcases.TC02_ThemeTest@1de5f0ef]" started-at="2024-10-24T16:20:24 IST" name="setUp" finished-at="2024-10-24T16:20:32 IST" duration-ms="8332" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.scart.testcases.TC02_ThemeTest@6cbcf243]" started-at="2024-11-07T21:29:51 IST" name="setUp" finished-at="2024-11-07T21:30:05 IST" duration-ms="13565" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLogin()[pri:0, instance:com.scart.testcases.TC02_ThemeTest@1de5f0ef]" started-at="2024-10-24T16:20:32 IST" name="verifyLogin" finished-at="2024-10-24T16:20:36 IST" duration-ms="3638" status="PASS">
+        <test-method signature="verifyLogin()[pri:0, instance:com.scart.testcases.TC02_ThemeTest@6cbcf243]" started-at="2024-11-07T21:30:05 IST" name="verifyLogin" finished-at="2024-11-07T21:30:09 IST" duration-ms="4434" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method signature="menuButtonTest()[pri:0, instance:com.scart.testcases.TC02_ThemeTest@1de5f0ef]" started-at="2024-10-24T16:21:18 IST" name="menuButtonTest" finished-at="2024-10-24T16:21:19 IST" depends-on-methods="com.scart.testcases.TC02_ThemeTest.verifyLogin" duration-ms="752" status="PASS">
+        <test-method signature="menuButtonTest()[pri:0, instance:com.scart.testcases.TC02_ThemeTest@6cbcf243]" started-at="2024-11-07T21:30:09 IST" name="menuButtonTest" finished-at="2024-11-07T21:30:10 IST" depends-on-methods="com.scart.testcases.TC02_ThemeTest.verifyLogin" duration-ms="817" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- menuButtonTest -->
-        <test-method signature="selectThemeOption()[pri:0, instance:com.scart.testcases.TC02_ThemeTest@1de5f0ef]" started-at="2024-10-24T16:21:19 IST" name="selectThemeOption" finished-at="2024-10-24T16:21:24 IST" depends-on-methods="com.scart.testcases.TC02_ThemeTest.verifyLogin" duration-ms="5634" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at com.scart.testcases.TC02_ThemeTest.selectThemeOption(TC02_ThemeTest.java:55)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="selectThemeOption()[pri:0, instance:com.scart.testcases.TC02_ThemeTest@6cbcf243]" started-at="2024-11-07T21:30:10 IST" name="selectThemeOption" finished-at="2024-11-07T21:30:12 IST" depends-on-methods="com.scart.testcases.TC02_ThemeTest.verifyLogin" duration-ms="2174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectThemeOption -->
-        <test-method signature="verifyGridItemDimensionsConsistency()[pri:0, instance:com.scart.testcases.TC02_ThemeTest@1de5f0ef]" started-at="2024-10-24T16:21:25 IST" name="verifyGridItemDimensionsConsistency" finished-at="2024-10-24T16:21:28 IST" depends-on-methods="com.scart.testcases.TC02_ThemeTest.verifyLogin" duration-ms="3327" status="PASS">
+        <test-method signature="verifyGridItemDimensionsConsistency()[pri:0, instance:com.scart.testcases.TC02_ThemeTest@6cbcf243]" started-at="2024-11-07T21:30:12 IST" name="verifyGridItemDimensionsConsistency" finished-at="2024-11-07T21:30:14 IST" depends-on-methods="com.scart.testcases.TC02_ThemeTest.verifyLogin" duration-ms="1368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGridItemDimensionsConsistency -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.scart.testcases.TC02_ThemeTest@1de5f0ef]" started-at="2024-10-24T16:21:28 IST" name="tearDown" finished-at="2024-10-24T16:21:32 IST" duration-ms="3309" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.scart.testcases.TC02_ThemeTest@6cbcf243]" started-at="2024-11-07T21:30:14 IST" name="tearDown" finished-at="2024-11-07T21:30:14 IST" duration-ms="249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.scart.testcases.TC02_ThemeTest -->
       <class name="com.scart.testcases.TC03_VerifyLinksInMenuSectionTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.scart.testcases.TC03_VerifyLinksInMenuSectionTest@376a312c]" started-at="2024-10-24T16:20:36 IST" name="setUp" finished-at="2024-10-24T16:20:53 IST" duration-ms="17117" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.scart.testcases.TC03_VerifyLinksInMenuSectionTest@29e6eb25]" started-at="2024-11-07T21:30:14 IST" name="setUp" finished-at="2024-11-07T21:30:21 IST" duration-ms="6489" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLogin()[pri:0, instance:com.scart.testcases.TC03_VerifyLinksInMenuSectionTest@376a312c]" started-at="2024-10-24T16:20:53 IST" name="verifyLogin" finished-at="2024-10-24T16:20:57 IST" duration-ms="4184" status="PASS">
+        <test-method signature="verifyLogin()[pri:0, instance:com.scart.testcases.TC03_VerifyLinksInMenuSectionTest@29e6eb25]" started-at="2024-11-07T21:30:21 IST" name="verifyLogin" finished-at="2024-11-07T21:30:25 IST" duration-ms="4189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method signature="checkBrokenLinks()[pri:0, instance:com.scart.testcases.TC03_VerifyLinksInMenuSectionTest@376a312c]" started-at="2024-10-24T16:21:32 IST" name="checkBrokenLinks" finished-at="2024-10-24T16:21:39 IST" depends-on-methods="com.scart.testcases.TC03_VerifyLinksInMenuSectionTest.verifyLogin" duration-ms="7347" status="PASS">
+        <test-method signature="checkBrokenLinks()[pri:0, instance:com.scart.testcases.TC03_VerifyLinksInMenuSectionTest@29e6eb25]" started-at="2024-11-07T21:30:25 IST" name="checkBrokenLinks" finished-at="2024-11-07T21:30:35 IST" depends-on-methods="com.scart.testcases.TC03_VerifyLinksInMenuSectionTest.verifyLogin" duration-ms="10306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBrokenLinks -->
-        <test-method signature="verifySelectAllCheckboxFunctionality()[pri:0, instance:com.scart.testcases.TC03_VerifyLinksInMenuSectionTest@376a312c]" started-at="2024-10-24T16:21:39 IST" name="verifySelectAllCheckboxFunctionality" finished-at="2024-10-24T16:21:43 IST" depends-on-methods="com.scart.testcases.TC03_VerifyLinksInMenuSectionTest.verifyLogin" duration-ms="4321" status="PASS">
+        <test-method signature="verifySelectAllCheckboxFunctionality()[pri:0, instance:com.scart.testcases.TC03_VerifyLinksInMenuSectionTest@29e6eb25]" started-at="2024-11-07T21:30:35 IST" name="verifySelectAllCheckboxFunctionality" finished-at="2024-11-07T21:30:39 IST" depends-on-methods="com.scart.testcases.TC03_VerifyLinksInMenuSectionTest.verifyLogin" duration-ms="4287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySelectAllCheckboxFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.scart.testcases.TC03_VerifyLinksInMenuSectionTest@376a312c]" started-at="2024-10-24T16:21:43 IST" name="tearDown" finished-at="2024-10-24T16:21:45 IST" duration-ms="1944" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.scart.testcases.TC03_VerifyLinksInMenuSectionTest@29e6eb25]" started-at="2024-11-07T21:30:39 IST" name="tearDown" finished-at="2024-11-07T21:30:40 IST" duration-ms="307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.scart.testcases.TC03_VerifyLinksInMenuSectionTest -->
       <class name="com.scart.testcases.TC01_LoginAndLogOutTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.scart.testcases.TC01_LoginAndLogOutTest@58e6d4b8]" started-at="2024-10-24T16:19:47 IST" name="setUp" finished-at="2024-10-24T16:19:56 IST" duration-ms="9195" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.scart.testcases.TC01_LoginAndLogOutTest@47404bea]" started-at="2024-11-07T21:28:57 IST" name="setUp" finished-at="2024-11-07T21:29:20 IST" duration-ms="22890" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginAndLogOutTest(java.lang.String,java.lang.String)[pri:0, instance:com.scart.testcases.TC01_LoginAndLogOutTest@58e6d4b8]" started-at="2024-10-24T16:19:56 IST" name="loginAndLogOutTest" data-provider="loginData" finished-at="2024-10-24T16:20:01 IST" duration-ms="4344" status="PASS">
+        <test-method signature="loginAndLogOutTest(java.lang.String,java.lang.String)[pri:0, instance:com.scart.testcases.TC01_LoginAndLogOutTest@47404bea]" started-at="2024-11-07T21:29:21 IST" name="loginAndLogOutTest" data-provider="loginData" finished-at="2024-11-07T21:29:29 IST" duration-ms="8335" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -130,7 +96,7 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAndLogOutTest -->
-        <test-method signature="loginAndLogOutTest(java.lang.String,java.lang.String)[pri:0, instance:com.scart.testcases.TC01_LoginAndLogOutTest@58e6d4b8]" started-at="2024-10-24T16:20:01 IST" name="loginAndLogOutTest" data-provider="loginData" finished-at="2024-10-24T16:20:11 IST" duration-ms="10019" status="FAIL">
+        <test-method signature="loginAndLogOutTest(java.lang.String,java.lang.String)[pri:0, instance:com.scart.testcases.TC01_LoginAndLogOutTest@47404bea]" started-at="2024-11-07T21:29:29 IST" name="loginAndLogOutTest" data-provider="loginData" finished-at="2024-11-07T21:29:40 IST" duration-ms="10420" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -167,19 +133,25 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAndLogOutTest -->
-        <test-method signature="loginAndLogOutTest(java.lang.String,java.lang.String)[pri:0, instance:com.scart.testcases.TC01_LoginAndLogOutTest@58e6d4b8]" started-at="2024-10-24T16:20:11 IST" name="loginAndLogOutTest" data-provider="loginData" finished-at="2024-10-24T16:20:21 IST" duration-ms="9713" status="FAIL">
+        <test-method signature="loginAndLogOutTest(java.lang.String,java.lang.String)[pri:0, instance:com.scart.testcases.TC01_LoginAndLogOutTest@47404bea]" started-at="2024-11-07T21:29:40 IST" name="loginAndLogOutTest" data-provider="loginData" finished-at="2024-11-07T21:29:51 IST" duration-ms="10450" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -216,40 +188,46 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAndLogOutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.scart.testcases.TC01_LoginAndLogOutTest@58e6d4b8]" started-at="2024-10-24T16:20:21 IST" name="tearDown" finished-at="2024-10-24T16:20:24 IST" duration-ms="2745" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.scart.testcases.TC01_LoginAndLogOutTest@47404bea]" started-at="2024-11-07T21:29:51 IST" name="tearDown" finished-at="2024-11-07T21:29:51 IST" duration-ms="355" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.scart.testcases.TC01_LoginAndLogOutTest -->
       <class name="com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@28d6290]" started-at="2024-10-24T16:20:57 IST" name="setUp" finished-at="2024-10-24T16:21:10 IST" duration-ms="13125" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@62435e70]" started-at="2024-11-07T21:30:40 IST" name="setUp" finished-at="2024-11-07T21:30:45 IST" duration-ms="4988" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLogin()[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@28d6290]" started-at="2024-10-24T16:21:10 IST" name="verifyLogin" finished-at="2024-10-24T16:21:18 IST" duration-ms="7739" status="PASS">
+        <test-method signature="verifyLogin()[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@62435e70]" started-at="2024-11-07T21:30:45 IST" name="verifyLogin" finished-at="2024-11-07T21:30:49 IST" duration-ms="3921" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method signature="filterOrdersListBasedOnEnteredEmail(java.lang.String)[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@28d6290]" started-at="2024-10-24T16:21:45 IST" name="filterOrdersListBasedOnEnteredEmail" finished-at="2024-10-24T16:21:50 IST" depends-on-methods="com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest.verifyLogin" duration-ms="4989" status="PASS">
+        <test-method signature="filterOrdersListBasedOnEnteredEmail(java.lang.String)[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@62435e70]" started-at="2024-11-07T21:30:49 IST" name="filterOrdersListBasedOnEnteredEmail" finished-at="2024-11-07T21:30:55 IST" depends-on-methods="com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest.verifyLogin" duration-ms="6273" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -260,513 +238,19 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filterOrdersListBasedOnEnteredEmail -->
-        <test-method signature="getOrdersTableDataAndWriteIntoExcel()[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@28d6290]" started-at="2024-10-24T16:21:50 IST" name="getOrdersTableDataAndWriteIntoExcel" finished-at="2024-10-24T16:22:14 IST" depends-on-methods="com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest.verifyLogin" duration-ms="23542" status="PASS">
+        <test-method signature="getOrdersTableDataAndWriteIntoExcel()[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@62435e70]" started-at="2024-11-07T21:30:55 IST" name="getOrdersTableDataAndWriteIntoExcel" finished-at="2024-11-07T21:31:30 IST" depends-on-methods="com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest.verifyLogin" duration-ms="35614" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getOrdersTableDataAndWriteIntoExcel -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@28d6290]" started-at="2024-10-24T16:22:14 IST" name="tearDown" finished-at="2024-10-24T16:22:15 IST" duration-ms="1655" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest -->
-    </test> <!-- FirefoxTest -->
-    <test started-at="2024-10-24T16:19:47 IST" name="ChromeTest" finished-at="2024-10-24T16:22:18 IST" duration-ms="150832">
-      <class name="com.scart.testcases.TC02_ThemeTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.scart.testcases.TC02_ThemeTest@3e34ace1]" started-at="2024-10-24T16:20:20 IST" name="setUp" finished-at="2024-10-24T16:20:23 IST" duration-ms="3412" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLogin()[pri:0, instance:com.scart.testcases.TC02_ThemeTest@3e34ace1]" started-at="2024-10-24T16:20:23 IST" name="verifyLogin" finished-at="2024-10-24T16:20:26 IST" duration-ms="2538" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method signature="menuButtonTest()[pri:0, instance:com.scart.testcases.TC02_ThemeTest@3e34ace1]" started-at="2024-10-24T16:20:47 IST" name="menuButtonTest" finished-at="2024-10-24T16:20:50 IST" depends-on-methods="com.scart.testcases.TC02_ThemeTest.verifyLogin" duration-ms="3845" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- menuButtonTest -->
-        <test-method signature="selectThemeOption()[pri:0, instance:com.scart.testcases.TC02_ThemeTest@3e34ace1]" started-at="2024-10-24T16:20:50 IST" name="selectThemeOption" finished-at="2024-10-24T16:20:56 IST" depends-on-methods="com.scart.testcases.TC02_ThemeTest.verifyLogin" duration-ms="5121" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectThemeOption -->
-        <test-method signature="verifyGridItemDimensionsConsistency()[pri:0, instance:com.scart.testcases.TC02_ThemeTest@3e34ace1]" started-at="2024-10-24T16:20:56 IST" name="verifyGridItemDimensionsConsistency" finished-at="2024-10-24T16:21:03 IST" depends-on-methods="com.scart.testcases.TC02_ThemeTest.verifyLogin" duration-ms="7889" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyGridItemDimensionsConsistency -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.scart.testcases.TC02_ThemeTest@3e34ace1]" started-at="2024-10-24T16:21:03 IST" name="tearDown" finished-at="2024-10-24T16:21:08 IST" duration-ms="4326" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.scart.testcases.TC02_ThemeTest -->
-      <class name="com.scart.testcases.TC03_VerifyLinksInMenuSectionTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.scart.testcases.TC03_VerifyLinksInMenuSectionTest@62fe6067]" started-at="2024-10-24T16:20:26 IST" name="setUp" finished-at="2024-10-24T16:20:30 IST" duration-ms="4227" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLogin()[pri:0, instance:com.scart.testcases.TC03_VerifyLinksInMenuSectionTest@62fe6067]" started-at="2024-10-24T16:20:30 IST" name="verifyLogin" finished-at="2024-10-24T16:20:34 IST" duration-ms="4166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method signature="checkBrokenLinks()[pri:0, instance:com.scart.testcases.TC03_VerifyLinksInMenuSectionTest@62fe6067]" started-at="2024-10-24T16:21:08 IST" name="checkBrokenLinks" finished-at="2024-10-24T16:21:25 IST" depends-on-methods="com.scart.testcases.TC03_VerifyLinksInMenuSectionTest.verifyLogin" duration-ms="17236" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkBrokenLinks -->
-        <test-method signature="verifySelectAllCheckboxFunctionality()[pri:0, instance:com.scart.testcases.TC03_VerifyLinksInMenuSectionTest@62fe6067]" started-at="2024-10-24T16:21:25 IST" name="verifySelectAllCheckboxFunctionality" finished-at="2024-10-24T16:21:30 IST" depends-on-methods="com.scart.testcases.TC03_VerifyLinksInMenuSectionTest.verifyLogin" duration-ms="5036" status="FAIL">
-          <exception class="java.util.ConcurrentModificationException">
-            <full-stacktrace>
-              <![CDATA[java.util.ConcurrentModificationException
-at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1229)
-at com.scart.utilities.MyListener.recordTestResult(MyListener.java:194)
-at com.scart.utilities.MyListener.onTestSuccess(MyListener.java:92)
-at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)
-at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:774)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.util.ConcurrentModificationException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySelectAllCheckboxFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.scart.testcases.TC03_VerifyLinksInMenuSectionTest@62fe6067]" started-at="2024-10-24T16:21:30 IST" name="tearDown" finished-at="2024-10-24T16:21:32 IST" duration-ms="1338" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.scart.testcases.TC03_VerifyLinksInMenuSectionTest -->
-      <class name="com.scart.testcases.TC01_LoginAndLogOutTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.scart.testcases.TC01_LoginAndLogOutTest@2dbe250d]" started-at="2024-10-24T16:19:47 IST" name="setUp" finished-at="2024-10-24T16:19:52 IST" duration-ms="4604" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginAndLogOutTest(java.lang.String,java.lang.String)[pri:0, instance:com.scart.testcases.TC01_LoginAndLogOutTest@2dbe250d]" started-at="2024-10-24T16:19:53 IST" name="loginAndLogOutTest" data-provider="loginData" finished-at="2024-10-24T16:19:58 IST" duration-ms="5370" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAndLogOutTest -->
-        <test-method signature="loginAndLogOutTest(java.lang.String,java.lang.String)[pri:0, instance:com.scart.testcases.TC01_LoginAndLogOutTest@2dbe250d]" started-at="2024-10-24T16:19:58 IST" name="loginAndLogOutTest" data-provider="loginData" finished-at="2024-10-24T16:20:09 IST" duration-ms="10257" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1234]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Invalid Credentials expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Invalid Credentials expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at com.scart.testcases.TC01_LoginAndLogOutTest.loginAndLogOutTest(TC01_LoginAndLogOutTest.java:43)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAndLogOutTest -->
-        <test-method signature="loginAndLogOutTest(java.lang.String,java.lang.String)[pri:0, instance:com.scart.testcases.TC01_LoginAndLogOutTest@2dbe250d]" started-at="2024-10-24T16:20:09 IST" name="loginAndLogOutTest" data-provider="loginData" finished-at="2024-10-24T16:20:19 IST" duration-ms="9820" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[tester]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Invalid Credentials expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Invalid Credentials expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at com.scart.testcases.TC01_LoginAndLogOutTest.loginAndLogOutTest(TC01_LoginAndLogOutTest.java:43)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAndLogOutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.scart.testcases.TC01_LoginAndLogOutTest@2dbe250d]" started-at="2024-10-24T16:20:19 IST" name="tearDown" finished-at="2024-10-24T16:20:20 IST" duration-ms="521" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.scart.testcases.TC01_LoginAndLogOutTest -->
-      <class name="com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@4f071df8]" started-at="2024-10-24T16:20:34 IST" name="setUp" finished-at="2024-10-24T16:20:40 IST" duration-ms="5981" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLogin()[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@4f071df8]" started-at="2024-10-24T16:20:40 IST" name="verifyLogin" finished-at="2024-10-24T16:20:46 IST" duration-ms="5890" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method signature="filterOrdersListBasedOnEnteredEmail(java.lang.String)[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@4f071df8]" started-at="2024-10-24T16:21:32 IST" name="filterOrdersListBasedOnEnteredEmail" finished-at="2024-10-24T16:21:39 IST" depends-on-methods="com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest.verifyLogin" duration-ms="6937" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin@gmail.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filterOrdersListBasedOnEnteredEmail -->
-        <test-method signature="getOrdersTableDataAndWriteIntoExcel()[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@4f071df8]" started-at="2024-10-24T16:21:39 IST" name="getOrdersTableDataAndWriteIntoExcel" finished-at="2024-10-24T16:22:12 IST" depends-on-methods="com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest.verifyLogin" duration-ms="33146" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getOrdersTableDataAndWriteIntoExcel -->
-        <test-method signature="sortOrdersListBasedonAscendingOrderOfDate()[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@4f071df8]" started-at="2024-10-24T16:22:12 IST" name="sortOrdersListBasedonAscendingOrderOfDate" finished-at="2024-10-24T16:22:18 IST" depends-on-methods="com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest.verifyLogin" duration-ms="5754" status="PASS">
+        <test-method signature="sortOrdersListBasedonAscendingOrderOfDate()[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@62435e70]" started-at="2024-11-07T21:31:30 IST" name="sortOrdersListBasedonAscendingOrderOfDate" finished-at="2024-11-07T21:31:37 IST" depends-on-methods="com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest.verifyLogin" duration-ms="6588" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortOrdersListBasedonAscendingOrderOfDate -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@4f071df8]" started-at="2024-10-24T16:22:18 IST" name="tearDown" finished-at="2024-10-24T16:22:18 IST" duration-ms="281" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@62435e70]" started-at="2024-11-07T21:31:37 IST" name="tearDown" finished-at="2024-11-07T21:31:37 IST" duration-ms="302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest -->
-    </test> <!-- ChromeTest -->
-    <test started-at="2024-10-24T16:19:47 IST" name="EdgeTest" finished-at="2024-10-24T16:22:23 IST" duration-ms="156458">
-      <class name="com.scart.testcases.TC02_ThemeTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.scart.testcases.TC02_ThemeTest@1c55f277]" started-at="2024-10-24T16:20:21 IST" name="setUp" finished-at="2024-10-24T16:20:25 IST" duration-ms="3578" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLogin()[pri:0, instance:com.scart.testcases.TC02_ThemeTest@1c55f277]" started-at="2024-10-24T16:20:25 IST" name="verifyLogin" finished-at="2024-10-24T16:20:28 IST" duration-ms="3572" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method signature="menuButtonTest()[pri:0, instance:com.scart.testcases.TC02_ThemeTest@1c55f277]" started-at="2024-10-24T16:20:55 IST" name="menuButtonTest" finished-at="2024-10-24T16:20:58 IST" depends-on-methods="com.scart.testcases.TC02_ThemeTest.verifyLogin" duration-ms="3398" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- menuButtonTest -->
-        <test-method signature="selectThemeOption()[pri:0, instance:com.scart.testcases.TC02_ThemeTest@1c55f277]" started-at="2024-10-24T16:20:58 IST" name="selectThemeOption" finished-at="2024-10-24T16:21:02 IST" depends-on-methods="com.scart.testcases.TC02_ThemeTest.verifyLogin" duration-ms="4034" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectThemeOption -->
-        <test-method signature="verifyGridItemDimensionsConsistency()[pri:0, instance:com.scart.testcases.TC02_ThemeTest@1c55f277]" started-at="2024-10-24T16:21:03 IST" name="verifyGridItemDimensionsConsistency" finished-at="2024-10-24T16:21:05 IST" depends-on-methods="com.scart.testcases.TC02_ThemeTest.verifyLogin" duration-ms="2657" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyGridItemDimensionsConsistency -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.scart.testcases.TC02_ThemeTest@1c55f277]" started-at="2024-10-24T16:21:05 IST" name="tearDown" finished-at="2024-10-24T16:21:10 IST" duration-ms="4292" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.scart.testcases.TC02_ThemeTest -->
-      <class name="com.scart.testcases.TC03_VerifyLinksInMenuSectionTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.scart.testcases.TC03_VerifyLinksInMenuSectionTest@5ddabb18]" started-at="2024-10-24T16:20:28 IST" name="setUp" finished-at="2024-10-24T16:20:35 IST" duration-ms="6765" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLogin()[pri:0, instance:com.scart.testcases.TC03_VerifyLinksInMenuSectionTest@5ddabb18]" started-at="2024-10-24T16:20:35 IST" name="verifyLogin" finished-at="2024-10-24T16:20:39 IST" duration-ms="3958" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method signature="checkBrokenLinks()[pri:0, instance:com.scart.testcases.TC03_VerifyLinksInMenuSectionTest@5ddabb18]" started-at="2024-10-24T16:21:10 IST" name="checkBrokenLinks" finished-at="2024-10-24T16:21:25 IST" depends-on-methods="com.scart.testcases.TC03_VerifyLinksInMenuSectionTest.verifyLogin" duration-ms="15463" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkBrokenLinks -->
-        <test-method signature="verifySelectAllCheckboxFunctionality()[pri:0, instance:com.scart.testcases.TC03_VerifyLinksInMenuSectionTest@5ddabb18]" started-at="2024-10-24T16:21:25 IST" name="verifySelectAllCheckboxFunctionality" finished-at="2024-10-24T16:21:30 IST" depends-on-methods="com.scart.testcases.TC03_VerifyLinksInMenuSectionTest.verifyLogin" duration-ms="5035" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySelectAllCheckboxFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.scart.testcases.TC03_VerifyLinksInMenuSectionTest@5ddabb18]" started-at="2024-10-24T16:21:30 IST" name="tearDown" finished-at="2024-10-24T16:21:32 IST" duration-ms="2209" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.scart.testcases.TC03_VerifyLinksInMenuSectionTest -->
-      <class name="com.scart.testcases.TC01_LoginAndLogOutTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.scart.testcases.TC01_LoginAndLogOutTest@3f1c5af9]" started-at="2024-10-24T16:19:47 IST" name="setUp" finished-at="2024-10-24T16:19:51 IST" duration-ms="4427" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginAndLogOutTest(java.lang.String,java.lang.String)[pri:0, instance:com.scart.testcases.TC01_LoginAndLogOutTest@3f1c5af9]" started-at="2024-10-24T16:19:53 IST" name="loginAndLogOutTest" data-provider="loginData" finished-at="2024-10-24T16:19:58 IST" duration-ms="5336" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAndLogOutTest -->
-        <test-method signature="loginAndLogOutTest(java.lang.String,java.lang.String)[pri:0, instance:com.scart.testcases.TC01_LoginAndLogOutTest@3f1c5af9]" started-at="2024-10-24T16:19:58 IST" name="loginAndLogOutTest" data-provider="loginData" finished-at="2024-10-24T16:20:09 IST" duration-ms="10308" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1234]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Invalid Credentials expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Invalid Credentials expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at com.scart.testcases.TC01_LoginAndLogOutTest.loginAndLogOutTest(TC01_LoginAndLogOutTest.java:43)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAndLogOutTest -->
-        <test-method signature="loginAndLogOutTest(java.lang.String,java.lang.String)[pri:0, instance:com.scart.testcases.TC01_LoginAndLogOutTest@3f1c5af9]" started-at="2024-10-24T16:20:09 IST" name="loginAndLogOutTest" data-provider="loginData" finished-at="2024-10-24T16:20:19 IST" duration-ms="9813" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[tester]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Invalid Credentials expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Invalid Credentials expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at com.scart.testcases.TC01_LoginAndLogOutTest.loginAndLogOutTest(TC01_LoginAndLogOutTest.java:43)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAndLogOutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.scart.testcases.TC01_LoginAndLogOutTest@3f1c5af9]" started-at="2024-10-24T16:20:19 IST" name="tearDown" finished-at="2024-10-24T16:20:21 IST" duration-ms="1900" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.scart.testcases.TC01_LoginAndLogOutTest -->
-      <class name="com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@3e8f7922]" started-at="2024-10-24T16:20:39 IST" name="setUp" finished-at="2024-10-24T16:20:51 IST" duration-ms="11921" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLogin()[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@3e8f7922]" started-at="2024-10-24T16:20:51 IST" name="verifyLogin" finished-at="2024-10-24T16:20:55 IST" duration-ms="3724" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method signature="filterOrdersListBasedOnEnteredEmail(java.lang.String)[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@3e8f7922]" started-at="2024-10-24T16:21:32 IST" name="filterOrdersListBasedOnEnteredEmail" finished-at="2024-10-24T16:21:43 IST" depends-on-methods="com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest.verifyLogin" duration-ms="10734" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin@gmail.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filterOrdersListBasedOnEnteredEmail -->
-        <test-method signature="getOrdersTableDataAndWriteIntoExcel()[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@3e8f7922]" started-at="2024-10-24T16:21:43 IST" name="getOrdersTableDataAndWriteIntoExcel" finished-at="2024-10-24T16:22:17 IST" depends-on-methods="com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest.verifyLogin" duration-ms="33542" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getOrdersTableDataAndWriteIntoExcel -->
-        <test-method signature="sortOrdersListBasedonAscendingOrderOfDate()[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@3e8f7922]" started-at="2024-10-24T16:22:17 IST" name="sortOrdersListBasedonAscendingOrderOfDate" finished-at="2024-10-24T16:22:22 IST" depends-on-methods="com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest.verifyLogin" duration-ms="5489" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sortOrdersListBasedonAscendingOrderOfDate -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest@3e8f7922]" started-at="2024-10-24T16:22:22 IST" name="tearDown" finished-at="2024-10-24T16:22:23 IST" duration-ms="1452" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.scart.testcases.TC04_FetchOrdersBasedOnGivenEmailTest -->
-    </test> <!-- EdgeTest -->
-  </suite> <!-- Suite -->
+    </test> <!-- Test -->
+  </suite> <!-- E-commerce Admin Test Suite -->
 </testng-results>

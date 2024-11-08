@@ -61,4 +61,14 @@ public class ExtractConfigurationProperties {
 		return p.getProperty("homePageURL");
 	}
 	
+	
+	public String getAccessKey() {
+		return p.getProperty("accessKey");
+	}
+	
+	public String getSecretAccess() {
+		return p.getProperty("secretAccessKey");
+	}
+	
+	
 }

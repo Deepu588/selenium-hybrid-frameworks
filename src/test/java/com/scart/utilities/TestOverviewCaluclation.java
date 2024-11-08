@@ -95,7 +95,7 @@ public class TestOverviewCaluclation {
             }
         }
 
-        // Add test categories or groups if used
+        // Add test categories or groups if used 
         List<String> groups = suite.getXmlSuite().getTests().get(0).getIncludedGroups();
         if (groups != null && groups.size() > 0) {
             overview.append("The test suite included the following groups: ");
@@ -115,12 +115,13 @@ public class TestOverviewCaluclation {
     
     
     private static void generateEnhancedAudioReport(String reportText, String suiteName) {
-       
+   ExtractConfigurationProperties e=    new ExtractConfigurationProperties();
     		
     	
     	AwsBasicCredentials awsCreds = AwsBasicCredentials.create(
-                "AKIA23WHUJD7M4NI3BVW", 
-                "WZskS8GuKldsJp30MYYXEs2J85cGBYZ0F0LEjF0K"
+    			
+    			e.getAccessKey(),e.getSecretAccess()
+               
             );
 
     	
@@ -167,8 +168,8 @@ public class TestOverviewCaluclation {
                   }
                   //System.out.println("Audio file created successfully. LN-165");
               }
-          } catch (Exception e) {
-              e.printStackTrace();
+          } catch (Exception e1) {
+              e1.printStackTrace();
           }
     	  
     	  
