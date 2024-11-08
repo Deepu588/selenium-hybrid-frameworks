@@ -1,0 +1,9 @@
+I have developed a  Selenium hybrid framework using Java that integrates various advanced features to enhance automation testing and reporting. This framework reads test data from an Excel file and generates comprehensive HTML reports. One key aspect is that it supports screen recording using the Monte Screen Recorder API, converting the generated
+.avi
+video files to
+.mp4
+format, which are embedded in the HTML report for easy playback through clickable buttons. The framework implements test suite listeners using the
+onFinish()
+method to provide a detailed overview of the test execution. Additionally, I have incorporated Amazon Polly to convert a written summary of the test execution results into speech, which is attached to the report for an auditory overview. To visualize test outcomes, I used the
+org.jfree.chart
+library to create bar graphs displaying test method names on the x-axis and test durations on the y-axis, with bar colours indicating the test status (green for pass, red for fail). The generated charts are embedded as PNG images in the HTML report, accessible through buttons. One of the on-test methods captures dynamic web table data, performs pagination up to three pages, and writes the extracted data into an Excel file. This generated Excel file can be downloaded directly from the HTML report by clicking a designated button. To make these assets easily shareable, all files, including graphs, audio, video, and Excel reports, are uploaded to Amazon S3, converting them into HTTPS links embedded within the report. This comprehensive framework ensures detailed, interactive, and shareable test reporting, enhancing visibility and insight into test execution.
