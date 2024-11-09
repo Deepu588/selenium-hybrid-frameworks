@@ -173,7 +173,7 @@ public class MyListener implements ITestListener,ISuiteListener {
 					try {
 						Desktop.getDesktop().browse(reportFile.toURI());
 						//if you need to implement automatic mail also then do some changes for variable called from,to and password in Mail Sender class
-						MailSender.sendEmailWithAttachment(ExtentReportManager.getLatestHtmlFile());  //   this line is responsible for sending mail
+						//MailSender.sendEmailWithAttachment(ExtentReportManager.getLatestHtmlFile());  //   this line is responsible for sending mail
 					} catch (Exception e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
